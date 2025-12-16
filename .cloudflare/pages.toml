@@ -1,0 +1,6 @@
+[build]
+command = "next build"
+dir = ".vercel/output/static"
+
+[deploy]
+command = "wrangler pages deploy .vercel/output/static"

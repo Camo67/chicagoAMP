@@ -1,7 +1,12 @@
 {
   "pages": {
-    "deployment": {
-      "command": "pnpm run deploy"
+    "commands": {
+      "build": {
+        "command": "next build"
+      },
+      "deploy": {
+        "command": "wrangler pages deploy"
+      }
     }
   }
 }
