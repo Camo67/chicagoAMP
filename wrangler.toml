@@ -4,7 +4,6 @@ compatibility_flags = ["nodejs_compat"]
 
 # Build output for Cloudflare Pages / next-on-pages
 pages_build_output_dir = ".vercel/output/static"
-build_command = "pnpm dlx @cloudflare/next-on-pages@latest"
 
 [vars]
 # Disable Next.js telemetry during Cloudflare builds
