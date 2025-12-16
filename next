@@ -1,0 +1,5 @@
+#!/bin/bash
+# Wrapper script for next command
+# This makes the next command available globally within the build environment
+
+./node_modules/.bin/next "$@"
