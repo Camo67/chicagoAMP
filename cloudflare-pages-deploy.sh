@@ -10,18 +10,18 @@ cd "${1:-.}"
 echo "Building Next.js application..."
 pnpm run build
 
-# Export the static site
-echo "Exporting static site..."
-pnpm run export
-
-# Check if out directory exists
-if [ ! -d "out" ]; then
-  echo "Error: 'out' directory not found after export"
-  exit 1
+# Check if .next/export directory exists
+if [ ! -d ".next/export" ]; then
+  echo "Warning: '.next/export' directory not found"
+  # Try to see what's in .next directory
+  if [ -d ".next" ]; then
+    echo "Contents of .next directory:"
+    ls -la .next
+  fi
 fi
 
 # Deploy using wrangler pages deploy command
 echo "Deploying with wrangler pages deploy..."
-npx wrangler pages deploy out --project-name=chicagoamp
+npx wrangler pages deploy .next/export --project-name=chicagoamp
 
 echo "Deployment finished!"

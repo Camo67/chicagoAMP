@@ -5,3 +5,6 @@ compatibility_flags = ["nodejs_compat"]
 [vars]
 # Disable Next.js telemetry during Cloudflare builds
 NEXT_TELEMETRY_DISABLED = "1"
+
+[assets]
+directory = ".next/export"

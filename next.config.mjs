@@ -11,6 +11,7 @@ const nextConfig = {
   
   // Enable static export
   output: 'export',
+  distDir: '.next/export',
 }
 
 export default nextConfig
