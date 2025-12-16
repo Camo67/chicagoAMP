@@ -1,0 +1,7 @@
+{
+  "pages": {
+    "deployment": {
+      "command": "pnpm run deploy"
+    }
+  }
+}
