@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "start": "next start",
     "deploy": "./cloudflare-pages-deploy.sh",
-    "cf-pages-deploy": "./cloudflare-pages-deploy.sh"
+    "cf-pages-deploy": "./cloudflare-pages-deploy.sh",
+    "cf-build": "./build.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
