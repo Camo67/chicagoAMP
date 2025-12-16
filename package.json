@@ -9,6 +9,7 @@
     "start": "next start",
     "export": "next export",
     "deploy": "./cloudflare-pages-deploy.sh",
+    "deploy-assets": "./deploy-assets.sh",
     "cf-pages-deploy": "./cloudflare-pages-deploy.sh",
     "cf-build": "./build.sh"
   },
