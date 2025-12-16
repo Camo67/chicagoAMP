@@ -1,4 +1,4 @@
- {    "name": "worker-name",    "compatibility_date": "2025-12-16",   "assets": {
-     "directory": "./dist"
-    }
+ {"name": "chicagoamp.devries-cameron20.workers.dev",    "compatibility_date": "2025-12-16",   "assets": {
+"directory": "./dist"
+ }
 	  }
