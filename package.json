@@ -7,8 +7,8 @@
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",
-    "deploy": "wrangler pages deploy .vercel/output/static",
-    "cf-pages-deploy": "wrangler pages deploy .vercel/output/static"
+    "deploy": "./cloudflare-pages-deploy.sh",
+    "cf-pages-deploy": "./cloudflare-pages-deploy.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
