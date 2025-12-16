@@ -8,6 +8,9 @@ const nextConfig = {
   },
   // Allow development access from the LAN IP used in your logs.
   allowedDevOrigins: ["http://192.168.18.5:3000"],
+  
+  // Enable static export
+  output: 'export',
 }
 
 export default nextConfig
