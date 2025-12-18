@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react"
 
@@ -77,7 +79,17 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Chicago, IL</li>
               <li>info@chicagoamp.com</li>
-              <li>(312) 555-0100</li>
+              <li>
+                <button 
+                  className="text-primary hover:underline"
+                  onClick={() => {
+                    // In a real implementation, this would connect to a live chat service
+                    alert('Live chat would open here');
+                  }}
+                >
+                  Start Live Chat
+                </button>
+              </li>
             </ul>
             <div className="flex gap-4 pt-2">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">

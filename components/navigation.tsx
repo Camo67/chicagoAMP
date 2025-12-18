@@ -13,10 +13,13 @@ export function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="text-2xl font-bold">
-              <span className="text-foreground">Chicago</span>
-              <span className="glow-cyan text-primary"> AMP</span>
+          <Link href="/">
+            <div className="flex items-center">
+              <img 
+                src="/chicago-amp-logo.png" 
+                alt="Chicago AMP Logo" 
+                className="h-20 w-20 object-contain"
+              />
             </div>
           </Link>
 

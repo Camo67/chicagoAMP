@@ -91,45 +91,17 @@ export function ContactForm() {
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Call Us</h3>
-                    <p className="text-muted-foreground text-sm mb-2">Mon-Fri 9am-6pm CST</p>
-                    <a href="tel:+13125550100" className="text-primary hover:underline">
-                      (312) 555-0100
-                    </a>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6 glass-effect border-border hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Visit Us</h3>
-                    <p className="text-muted-foreground text-sm mb-2">Stop by our office</p>
-                    <address className="text-primary not-italic">
-                      123 Creative Ave, Suite 400
-                      <br />
-                      Chicago, IL 60601
-                    </address>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6 glass-effect border-border hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Calendar className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Schedule a Call</h3>
-                    <p className="text-muted-foreground text-sm mb-3">Book a free 30-minute consultation</p>
-                    <Button
+                    <h3 className="font-semibold text-foreground mb-1">Chat With Us</h3>
+                    <p className="text-muted-foreground text-sm mb-2">Get immediate assistance</p>
+                    <Button 
                       variant="outline"
                       className="border-primary text-primary hover:bg-primary/10 bg-transparent"
+                      onClick={() => {
+                        // In a real implementation, this would connect to a live chat service
+                        alert('Live chat would open here');
+                      }}
                     >
-                      View Calendar
+                      Start Live Chat
                     </Button>
                   </div>
                 </div>

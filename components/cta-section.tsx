@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
@@ -30,7 +32,7 @@ export function CTASection() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-primary text-primary hover:bg-primary/10 bg-transparent"
+                  className="border-primary text-primary hover:bg-primary/10 hover:text-white bg-transparent"
                 >
                   View Portfolio
                 </Button>
